@@ -424,3 +424,23 @@ const GLOSSARY = [
     def: "A technique for anaesthetising an entire limb by injecting local anaesthetic into a vein after applying a tourniquet, used for procedures on the hand or forearm."
   }
 ];
+
+// Clinical agent (drug) names to visually emphasise wherever they appear —
+// in the diagram boxes themselves and in the readout panel's prose. This
+// is a rendering-only concern (app.js wraps each match in a styled span at
+// render time); it never touches label/sub, which stay byte-exact as
+// authored. Matching is case-insensitive and whole-word, longest name
+// first.
+// Added at Dr. Özgür Karcıoğlu's request, 2026-11-02 — see METHODOLOGY.md.
+const AGENTS = [
+  "Lidocaine",
+  "Prilocaine",
+  "Adrenaline",
+  "Epinephrine",
+  "Methylene blue",
+  "Ascorbic acid",
+  "Bupivacaine",
+  "Ropivacaine",
+  "Dapsone",
+  "Tetracaine"
+];
